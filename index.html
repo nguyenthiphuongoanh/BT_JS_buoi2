@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaitapJS_b2</title>
+    <!-- BT4-CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container form-group py-5">
+        
+        <h4>Bài 1: Tính tiền lương nhân viên</h4>
+        <br>
+        <p class="my-1">Tiền lương 1 ngày </p>
+        <input id="tienLuong1Ngay" class="form-control w-25">
+        <br>
+        <p class="my-1">Số ngày làm</p>
+        <input id="soNgayLam" class="form-control w-25">
+        <br>
+        <button onclick="tinhTongLuong()" id="btnTinhTien" class="btn btn-success">Tính lương</button>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả: <span id="tongLuong"></span>
+
+        </div>
+    </div>
+
+    <div class="container form-group py-5">
+        
+        <h4>Bài 2: Tính giá trị trung bình</h4>
+        <br>
+        <p class="my-1">Điểm Toán </p>
+        <input id="diemToan" class="form-control w-25">
+        <br>
+        <p class="my-1">Điểm Lý</p>
+        <input id="diemLy" class="form-control w-25">
+        <br>
+        <p class="my-1">Điểm Hóa</p>
+        <input id="diemHoa" class="form-control w-25">
+        <br>
+        <p class="my-1">Điểm Sinh</p>
+        <input id="diemSinh" class="form-control w-25">
+        <br>
+        <p class="my-1">Điểm Văn</p>
+        <input id="diemVan" class="form-control w-25">
+        <br>
+        
+        <button onclick="tinhTrungBinh()" id="btnTinhTrungBinh" class="btn btn-success">Tính trung bình</button>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả: <span id="trungBinh"></span>
+
+        </div>
+    </div>
+
+    <div class="container form-group py-5">
+        
+        <h4>Bài 3:Qui đổi tiền </h4>
+        <br>
+        <p class="my-1">Số tiền USD </p>
+        <input id="soTienUSD" class="form-control w-25">
+        <br>
+        <button onclick="quyDoiTien()" id="btnQuyDoiTien" class="btn btn-success">Quy đổi tiền</button>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả: <span id="soTienVND"></span>
+
+        </div>
+    </div>
+
+    <div class="container form-group py-5">
+        
+        <h4>Bài 4: Tính diện tích, chu vi hình chữ nhật </h4>
+        <br>
+        <p class="my-1">Chiều dài </p>
+        <input id="chieuDai" class="form-control w-25">
+        <br>
+        <p class="my-1">Chiều rộng</p>
+        <input id="chieuRong" class="form-control w-25">
+        <br>
+        <button onclick="tinhToan()" id="btntinhToan" class="btn btn-success">Tính</button>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả: <span id="giaTriTinhRa"></span> 
+
+        </div>
+    </div>
+
+    <div class="container form-group py-5">
+        
+        <h4>Bài 5: Tính tổng 2 ký số </h4>
+        <br>
+        <p class="my-1">số có 2 chữ số</p>
+        <input id="so" class="form-control w-25">
+        <br>
+        <button onclick="tinhTong2KySo()" id="btntinhTong2KySo" class="btn btn-success">Tính tổng</button>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả: <span id="tongKySo"></span>
+
+        </div>
+    </div>
+
+    
+    <!-- link hỗ trợ jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <!-- BT4-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+        </script>
+    <!-- main-JS -->
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
